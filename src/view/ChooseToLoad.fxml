@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChooseToLoadController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="888.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../background.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="32.0" layoutY="344.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="76.0" styleClass="btn" stylesheets="@style.css" text="Back" />
+      <ComboBox fx:id="loadList" layoutX="98.0" layoutY="36.0" prefHeight="40.0" prefWidth="683.0" promptText="Select Game To Load" styleClass="btn" stylesheets="@style.css" />
+      <Button layoutX="787.0" layoutY="344.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="40.0" prefWidth="76.0" styleClass="btn" stylesheets="@style.css" text="Load" />
+   </children>
+</AnchorPane>
