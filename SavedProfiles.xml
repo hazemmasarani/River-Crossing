@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><stories>
+	<story1 profilesCount="3">
+		<profile boatPosition="Right" creationTime="01:17, 03/05/2019" id="1" sails="1">
+			<leftBank crossersCount="2">
+				<crosser type="carni" weight="20.0"/>
+				<crosser type="plant" weight="20.0"/>
+			</leftBank>
+			<rightBank crossersCount="2">
+				<crosser type="herbi" weight="20.0"/>
+				<crosser type="farmer" weight="20.0"/>
+			</rightBank>
+		</profile>
+	<profile boatPosition="Left" creationTime="14:33, 05/05/2019" id="2" sails="4"><leftBank crossersCount="3"><crosser type="plant" weight="20.0"/><crosser type="herbi" weight="20.0"/><crosser type="farmer" weight="20.0"/></leftBank><rightBank crossersCount="1"><crosser type="carni" weight="20.0"/></rightBank></profile><profile boatPosition="Right" creationTime="13:59, 12/05/2019" id="3" sails="3"><leftBank crossersCount="1"><crosser type="plant" weight="20.0"/></leftBank><rightBank crossersCount="3"><crosser type="herbi" weight="20.0"/><crosser type="carni" weight="20.0"/><crosser type="farmer" weight="20.0"/></rightBank></profile></story1>
+	<story2 profilesCount="1">
+		<profile boatPosition="Right" creationTime="01:18, 03/05/2019" id="1" sails="1">
+			<leftBank crossersCount="3">
+				<crosser type="farmer" weight="60.0"/>
+				<crosser type="farmer" weight="80.0"/>
+				<crosser type="farmer" weight="90.0"/>
+			</leftBank>
+			<rightBank crossersCount="2">
+				<crosser type="herbi" weight="20.0"/>
+				<crosser type="farmer" weight="40.0"/>
+			</rightBank>
+		</profile>
+	</story2>
+</stories>

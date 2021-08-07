@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="controller.Story1Controller" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/Story1Controller.java" binary="false" label="story1Controller" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="432" y="0"/>    
+    <execution id="2">      
+      <position height="1810" width="0" x="0" y="132"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="1729" width="0" x="0" y="186"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="controller.Move" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/Move.java" binary="false" label="move" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="432" y="0"/>    
+    <execution id="6">      
+      <position height="1662" width="0" x="0" y="226"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="27" width="0" x="0" y="890"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="27" width="0" x="0" y="1108"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="27" width="0" x="0" y="1458"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="27" width="0" x="0" y="1676"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="controller.PlayerImage" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/PlayerImage.java" binary="false" label="playerImage" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="432" y="0"/>    
+    <execution id="9">      
+      <position height="27" width="0" x="0" y="688"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="27" width="0" x="0" y="1266"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="27" width="0" x="0" y="1834"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="23" interaction-operator="ALT">    
+    <interaction-operand id="24" constraint="currentlySailing">      
+      <fragment refId="25"/>    
+    </interaction-operand>    
+    <interaction-operand id="26" constraint="else">      
+      <fragment refId="27"/>    
+    </interaction-operand>    
+    <combined-fragment id="25" interaction-operator="OPT">      
+      <interaction-operand id="28" constraint="playerImage.isOnBoat">        
+        <fragment refId="29"/>        
+        <fragment refId="8"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="27" interaction-operator="ALT">      
+      <interaction-operand id="30" constraint="isBoatLeft &amp;&amp; playerImage.isInLeft">        
+        <fragment refId="31"/>        
+        <fragment refId="14"/>      
+      </interaction-operand>      
+      <interaction-operand id="32" constraint="else">        
+        <fragment refId="33"/>      
+      </interaction-operand>      
+      <combined-fragment id="31" interaction-operator="ALT">        
+        <interaction-operand id="34" constraint="playerImage.isOnBoat">          
+          <fragment refId="10"/>        
+        </interaction-operand>        
+        <interaction-operand id="35" constraint="else">          
+          <fragment refId="12"/>        
+        </interaction-operand>      
+      </combined-fragment>      
+      <combined-fragment id="33" interaction-operator="OPT">        
+        <interaction-operand id="36" constraint="!isBoatLeft &amp;&amp; !playerImage.isInLeft">          
+          <fragment refId="37"/>          
+          <fragment refId="20"/>        
+        </interaction-operand>        
+        <combined-fragment id="37" interaction-operator="ALT">          
+          <interaction-operand id="38" constraint="playerImage.isOnBoat">            
+            <fragment refId="16"/>          
+          </interaction-operand>          
+          <interaction-operand id="39" constraint="else">            
+            <fragment refId="18"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="40" interaction-operator="ALT">    
+    <interaction-operand id="41" constraint="!currentlyAutoSolving"/>    
+    <interaction-operand id="42" constraint="else">      
+      <fragment refId="43"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="farmer():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="movePlayer(controller.PlayerImage):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="moveBoat():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="getFreeBankPos(boolean[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getFreeBoatPos(boolean[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="movePlayer():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="getFreeBankPos(boolean[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="getFreeBoatPos(boolean[]):int" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="movePlayer():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>
+</sequence-diagram>

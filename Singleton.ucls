@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="controller.Stories_IRiverCrossingController" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/Stories_IRiverCrossingController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="219" y="390"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="2">    
+    <bendpoint x="481" y="400"/>    
+    <bendpoint x="476" y="35"/>    
+    <bendpoint x="216" y="35"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="3" name="mainCrossingController">        
+        <position height="0" width="0" x="68" y="83"/>      
+      </attribute>      
+      <multiplicity id="4" minimum="0" maximum="1">        
+        <position height="0" width="0" x="68" y="83"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

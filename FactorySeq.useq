@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="main.Story1_ICrossingStrategy" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/main/Story1_ICrossingStrategy.java" binary="false" label="story1_ICrossingStrategy" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="48" y="0"/>    
+    <execution id="2">      
+      <position height="985" width="0" x="0" y="298"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="904" width="0" x="0" y="352"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="controller.Stories_IRiverCrossingController" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/Stories_IRiverCrossingController.java" binary="false" label="&lt;static&gt;" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="27" width="0" x="0" y="392"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="crossersFactory.ICrosserFactory" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/crossersFactory/ICrosserFactory.java" binary="false" label="crossersFactory" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="27" width="0" x="0" y="986"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="27" width="0" x="0" y="1040"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="27" width="0" x="0" y="1094"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="27" width="0" x="0" y="1148"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="27" width="0" x="0" y="1202"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="446"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="500"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="27" width="0" x="0" y="554"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="27" width="0" x="0" y="608"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="27" width="0" x="0" y="662"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="602" width="0" x="0" y="478"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="521" width="0" x="0" y="532"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="model.Farmer" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/model/Farmer.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="27" width="0" x="0" y="606"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="model.Carni" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/model/Carni.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="35">      
+      <position height="27" width="0" x="0" y="737"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="model.Herbi" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/model/Herbi.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="37">      
+      <position height="27" width="0" x="0" y="868"/>    
+    </execution>  
+  </object>  
+  <object id="43" language="java" name="model.Plant" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/model/Plant.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="39">      
+      <position height="27" width="0" x="0" y="999"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="44" interaction-operator="ALT">    
+    <interaction-operand id="45" constraint="type.equals(&quot;farmer&quot;)">      
+      <fragment refId="32"/>    
+    </interaction-operand>    
+    <interaction-operand id="46" constraint="else">      
+      <fragment refId="47"/>    
+    </interaction-operand>    
+    <combined-fragment id="47" interaction-operator="ALT">      
+      <interaction-operand id="48" constraint="type.equals(&quot;carni&quot;)">        
+        <fragment refId="34"/>      
+      </interaction-operand>      
+      <interaction-operand id="49" constraint="else">        
+        <fragment refId="50"/>      
+      </interaction-operand>      
+      <combined-fragment id="50" interaction-operator="ALT">        
+        <interaction-operand id="51" constraint="type.equals(&quot;herbi&quot;)">          
+          <fragment refId="36"/>        
+        </interaction-operand>        
+        <interaction-operand id="52" constraint="else">          
+          <fragment refId="53"/>        
+        </interaction-operand>        
+        <combined-fragment id="53" interaction-operator="OPT">          
+          <interaction-operand id="54" constraint="type.equals(&quot;plant&quot;)">            
+            <fragment refId="38"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="Story1_ICrossingStrategy()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getMainCrossingController():controller.Stories_IRiverCrossingController" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="ICrosserFactory()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="ICrosserFactory()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="30" operation="createICrosser(java.lang.String):model.ICrosser2" asynchronous="false">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="Farmer()" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="Carni()" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="Herbi()" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="Plant()" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>
+</sequence-diagram>

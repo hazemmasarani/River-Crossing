@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="controller.Stories_IRiverCrossingController" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/controller/Stories_IRiverCrossingController.java" binary="false" 
+    label="stories_IRiverCrossingController" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="403" y="0"/>    
+    <execution id="2">      
+      <position height="283" width="0" x="0" y="109"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="202" width="0" x="0" y="163"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="283" width="0" x="0" y="447"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="202" width="0" x="0" y="501"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="283" width="0" x="0" y="825"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="202" width="0" x="0" y="879"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="remote.RemoteControl" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/remote/RemoteControl.java" binary="false" label="remoteControl" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="403" y="0"/>    
+    <execution id="8">      
+      <position height="27" width="0" x="0" y="257"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="27" width="0" x="0" y="311"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="27" width="0" x="0" y="595"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="27" width="0" x="0" y="649"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="27" width="0" x="0" y="973"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="27" width="0" x="0" y="1027"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="remote.Command" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/remote/Command.java" binary="false" label="command" type="interface" autoSize="true">    
+    <position height="-1" width="-1" x="403" y="0"/>    
+    <execution id="6">      
+      <position height="93" width="0" x="0" y="203"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="87" width="0" x="0" y="541"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="86" width="0" x="0" y="919"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="commands.LoadGameCommand" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/commands/LoadGameCommand.java" binary="false" label="loadGameCommand1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="34">      
+      <position height="27" width="0" x="0" y="574"/>    
+    </execution>  
+  </object>  
+  <object id="38" language="java" name="commands.LoadGameListCommand" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/commands/LoadGameListCommand.java" binary="false" label="loadGameListCommand3" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="36">      
+      <position height="27" width="0" x="0" y="951"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="commands.SaveCommand" project="River Crossing 0T" 
+    file="/River Crossing 0T/src/commands/SaveCommand.java" binary="false" label="saveCommand1" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="32">      
+      <position height="27" width="0" x="0" y="242"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="saveGame():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="addCommand(remote.Command):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="pushButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="loadGame():void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="addCommand(remote.Command):void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="pushButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="21" operation="loadGamesList():void" asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="addCommand(remote.Command):void" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="pushButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="31" operation="SaveCommand(controller.XmlParser)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="33" operation="LoadGameCommand(controller.XmlParser)" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="LoadGameListCommand(controller.XmlParser)" asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>
+</sequence-diagram>
